@@ -1,0 +1,2 @@
+# responsive-email-template-snippets
+Responsive email can be a huge pain when first starting out, especially if you have to optimize for older versions of Windows and Outlook.  Every email client renders and styles the same code differently.  After months of practice, following tutorials, testing and tweaking, I have come up with a very useful boilerplate and code snippet package that works on almost every combination of browser/email client. 
