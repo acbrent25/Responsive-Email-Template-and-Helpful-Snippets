@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+   <head>
+        
+      <meta charset="utf-8">
+      <!-- utf-8 works for most cases -->
+      <meta name="viewport" content="width=device-width">
+      <!-- Forcing initial-scale shouldn't be necessary -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- Use the latest (edge) version of IE rendering engine -->
+      <meta name="x-apple-disable-message-reformatting">
+      <!-- Disable auto-scale in iOS 10 Mail entirely -->
+      <title></title>
+      <!-- The title tag shows in email notifications, like Android 4.4. -->
+      <!-- Web Font / @font-face : BEGIN -->
+      <!-- NOTE: If web fonts are not required, lines 10 - 27 can be safely removed. -->
+      <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+      <!--[if mso]>
+      <style>
+         * {
+         font-family: sans-serif !important;
+         }
+      </style>
+      <![endif]-->
+      <!-- All other clients get the webfont reference; some will render the font and others will silently fail to the fallbacks. More on that here: http://stylecampaign.com/blog/2015/02/webfont-support-in-email/ -->
+      <!--[if !mso]><!-->
+      <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+      <!--<![endif]-->
+      <!-- Web Font / @font-face : END -->
+      <!-- CSS Reset : BEGIN -->
+      <style>
+         /* What it does: Remove spaces around the email design added by some email clients. */
+         /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+         html,
+         body {
+         margin: 0 auto !important;
+         padding: 0 !important;
+         height: 100% !important;
+         width: 100% !important;
+         }
+         /* What it does: Stops email clients resizing small text. */
+         * {
+         -ms-text-size-adjust: 100%;
+         -webkit-text-size-adjust: 100%;
+         }
+         /* What it does: Centers email on Android 4.4 */
+         div[style*="margin: 16px 0"] {
+         margin: 0 !important;
+         }
+         /* What it does: Stops Outlook from adding extra spacing to tables. */
+         table,
+         td {
+         mso-table-lspace: 0pt !important;
+         mso-table-rspace: 0pt !important;
+         }
+         /* What it does: Fixes webkit padding issue. Fix for Yahoo mail table alignment bug. Applies table-layout to the first 2 tables then removes for anything nested deeper. */
+         table {
+         border-spacing: 0 !important;
+         border-collapse: collapse !important;
+         table-layout: fixed !important;
+         margin: 0 auto !important;
+         }
+         table table table {
+         table-layout: auto;
+         }
+         /* What it does: Uses a better rendering method when resizing images in IE. */
+         img {
+         -ms-interpolation-mode:bicubic;
+         }
+         /* What it does: A work-around for email clients meddling in triggered links. */
+         *[x-apple-data-detectors],  /* iOS */
+         .x-gmail-data-detectors,    /* Gmail */
+         .x-gmail-data-detectors *,
+         .aBn {
+         border-bottom: 0 !important;
+         cursor: default !important;
+         color: inherit !important;
+         text-decoration: none !important;
+         font-size: inherit !important;
+         font-family: inherit !important;
+         font-weight: inherit !important;
+         line-height: inherit !important;
+         }
+         /* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
+         .a6S {
+         display: none !important;
+         opacity: 0.01 !important;
+         }
+         /* If the above doesn't work, add a .g-img class to any image in question. */
+         img.g-img + div {
+         display: none !important;
+         }
+         /* What it does: Prevents underlining the button text in Windows 10 */
+         .button-link {
+         text-decoration: none !important;
+         }
+         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+         /* Create one of these media queries for each additional viewport size you'd like to fix */
+         /* Thanks to Eric Lepetit (@ericlepetitsf) for help troubleshooting */
+         @media only screen and (min-device-width: 375px) and (max-device-width: 413px) { /* iPhone 6 and 6+ */
+         .email-container {
+         min-width: 375px !important;
+         }
+         }
+      </style>
+      <!-- CSS Reset : END -->
+      <!-- Custum CSS : BEGIN -->
+      <style>
+         @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700');
+         [style*="Montserrat"] {
+         font-family: 'Montserrat', Arial, sans-serif !important
+         }
+         @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+         [style*="Fredoka-One"] {
+         font-family: 'Fredoka One', Arial, sans-serif !important
+         }
+         body { margin: 0; padding: 0; }
+         /* overrides for screen sizes under 660 */
+         @media only screen and (max-width: 600px) {
+            table.container { width: 480px !important; }
+            td.cols-2 table.l-col { width: 100% !important; }
+            td.cols-2 table.r-col { width: 100% !important; }
+            .center-on-narrow {
+                text-align: center !important;
+                display: block !important;
+                margin-left: auto !important;
+                margin-right: auto !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                float: none !important;
+            }
+
+            td.r-header-txt { height: 40px; }
+            table.logo-row img { width: 100%!important; height: auto!important; }
+            td.cols-2 table.l-col {
+                margin-bottom: -5px !important;
+            }
+
+            .padding-narrow {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+            }
+
+            .full { display:block !important; width: 90%; padding-bottom: 30px !important; }
+
+         }
+         /* overrides for screen sizes under 510 */
+         @media only screen and (max-width: 510px) {
+            table.container { width: 100% !important; }
+            td.cols-2 table.l-col { width: 100% !important; }
+            td.cols-2 table.r-col { width: 100% !important; }
+            
+         }
+
+         table.l-col.logo-row { width: 300px !important;}
+         table.r-col.logo-row { width: 300px !important;}
+         table.logo-row img { width: 100%!important; height: auto!important; }
+
+
+        
+        
+
+      </style>
+      <!-- Custum CSS : END -->
+      <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+      <!--[if gte mso 9]>
+      <xml>
+         <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+         </o:OfficeDocumentSettings>
+      </xml>
+      <![endif]-->
+   </head>
+   <body width="100%" bgcolor="#ffffff" style="margin: 0; mso-line-height-rule: exactly;">
+      <center style="width: 100%; background: #eee; text-align: left;">
+         <!-- Email Body : BEGIN -->
+         <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="600" style="margin: auto;" class="container">
+            <!-- Header : BEGIN -->
+            <tr>
+               <td valign="top" bgcolor="#fff" class="cols-2" style="background-color: #fff; font-family: Arial,sans-serif, 'Montserrat';">
+                  <!-- l-col -->
+                  <table class="l-col" width="270" align="left">
+                     <tr>
+                        <td valign="top" style="padding: 0 0 0 30px;">
+                           <img class="center-on-narrow" alt="Inspired by drive" width="157" height="103"  style="width: 157px;" src="http://via.placeholder.com/157x103">
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- r-col -->
+                  <table class="r-col" width="270" align="right">
+                     <tr>
+                        <td height="103" valign="middle" class="center-on-narrow r-header-txt" style="font-size: 16px; color:#1e335e; text-transform: uppercase; text-align: right; font-weight:bold; font-family: Arial,sans-serif, 'Montserrat'; padding: 0 30px 0 0;">
+                           Brooklyn stumptown helvetica
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- Header : BEGIN -->  
+            <!-- Newly Designed Products : BEGIN -->
+            <tr>
+               <td bgcolor="#ffffff" align="center">
+                  <img src="http://via.placeholder.com/600x300" width="600" alt="alt text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; margin: auto;" class="g-img">
+               </td>
+            </tr>
+            <!-- Newly Designed Products : END --> 
+            <!-- The Trotter : BEGIN -->
+
+            <!-- Spacer -->
+            <tr>
+               <td style="line-height: 0; font-size: 0; height: 30px; background: #fff;">&nbsp;</td>
+            </tr>
+            <!-- Spacer -->
+            <!-- The Trotter : BEGIN -->
+            <tr>
+               <td valign="top" bgcolor="#fff" class="cols-2" style="background-color: #fff; font-family: Arial,sans-serif, 'Montserrat';">
+                  <!-- l-col -->
+                  <table class="l-col" width="270" align="left">
+                     <tr>
+                        <td valign="top" width="100%" style="padding: 0 0 0 20px;">
+                           <img class="center-on-narrow" alt="The Trotter" src="http://via.placeholder.com/250x250" width="250" height="250" style="width: 250px;">
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- r-col -->
+                  <table class="r-col" width="270" height="250" align="right">
+                     <tr>
+                        <td valign="middle" width="100%" class="padding-narrow" style="font-size: 12px; line-height: 16px; color:#636363; padding: 0 20px 0 0;">
+                           <h3 style="font-size:18px; color:#1e335e; margin-bottom: 5px;">
+                           <span style="font-family: Arial,sans-serif, 'Fredoka-One';">Brooklyn stumptown helvetica</span></br>
+                           <span style="font-size:14px; color:#1e335e; padding: 5px 0 0 0;">vinegar sartorial vexillologist</span></h4>
+                           Brooklyn stumptown helvetica drinking vinegar sartorial vexillologist. Blog craft beer migas subway tile fam kombucha flexitarian lo-fi roof party sartorial occupy biodiesel. Succulents jean shorts pinterest flannel truffaut cardigan pork belly. Cornhole echo park flexitarian ethical taiyaki. Franzen tacos cornhole cronut, artisan man braid everyday carry YOLO taiyaki asymmetrical.
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- The Trotter : END -->
+            <!-- Spacer -->
+            <tr>
+               <td style="line-height: 0; font-size: 0; height: 30px; background: #fff;">&nbsp;</td>
+            </tr>
+            <!-- Spacer -->
+            <!-- 2 -Growable Kanga : BEGIN -->
+            <tr>
+               <td valign="top" bgcolor="#dbf4fb" class="cols-2" style="background-color:#dbf4fb; font-family: Arial,sans-serif, 'Montserrat';">
+                   
+                  <!-- l-col -->
+                  <table dir="rtl" class="l-col" width="100%">
+                     <tr>
+                        <td dir="ltr" valign="top" width="50%" class="center-on-narrow" style="padding: 20px 20px 20px 0;">
+                           <img class="center-on-narrow" alt="The Trotter" src="http://via.placeholder.com/250x250" width="250" height="250" style="width: 250px;">
+                        </td>
+                        
+                        <td dir="ltr" valign="middle" width="50%" class="full padding-narrow" style="font-size: 12px; line-height: 16px; color:#636363; padding: 20px 0 0 30px;">
+                            <h3 style="font-size:18px; color:#1e335e; margin-bottom: 5px;">
+                            <span style="font-family: Arial,sans-serif, 'Fredoka-One';">vinegar sartorial vexillologist</span></br>
+                            <span style="font-size:14px; color:#1e335e; padding: 5px 0 0 0;">vinegar sartorial vexillologist</span></h4>
+                            Brooklyn stumptown helvetica drinking vinegar sartorial vexillologist. Blog craft beer migas subway tile fam kombucha flexitarian lo-fi roof party sartorial occupy biodiesel. Succulents jean shorts pinterest flannel truffaut cardigan pork belly. Cornhole echo park flexitarian ethical taiyaki. Franzen tacos cornhole cronut, artisan man braid everyday carry YOLO taiyaki asymmetrical.
+                            </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- 2 -Growable Kanga : BEGIN -->
+             <!-- Spacer -->
+             <tr>
+               <td style="line-height: 0; font-size: 0; height: 30px; background: #fff;">&nbsp;</td>
+            </tr>
+            <!-- Spacer -->
+            <!-- The Trotter : BEGIN -->
+            <tr>
+               <td valign="top" bgcolor="#fff" class="cols-2" style="background-color: #fff; font-family: Arial,sans-serif, 'Montserrat';">
+                  <!-- l-col -->
+                  <table class="l-col" width="270" align="left">
+                     <tr>
+                        <td valign="top" width="100%" style="padding: 0 0 0 20px;">
+                           <img class="center-on-narrow" alt="The Trotter" src="http://via.placeholder.com/250x250" width="250" height="250" style="width: 250px;">
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- r-col -->
+                  <table class="r-col" width="270" height="250" align="right">
+                     <tr>
+                        <td valign="middle" width="100%" class="padding-narrow" style="font-size: 12px; line-height: 16px; color:#636363; padding: 0 20px 0 0;">
+                           <h3 style="font-size:18px; color:#1e335e; margin-bottom: 5px;">
+                           <span style="font-family: Arial,sans-serif, 'Fredoka-One';">vinegar sartorial vexillologist</span></br>
+                           <span style="font-size:14px; color:#1e335e; padding: 5px 0 0 0;">vinegar sartorial vexillologist</span></h4>
+                           Brooklyn stumptown helvetica drinking vinegar sartorial vexillologist. Blog craft beer migas subway tile fam kombucha flexitarian lo-fi roof party sartorial occupy biodiesel. Succulents jean shorts pinterest flannel truffaut cardigan pork belly. Cornhole echo park flexitarian ethical taiyaki. Franzen tacos cornhole cronut, artisan man braid everyday carry YOLO taiyaki asymmetrical.
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- The Trotter : END -->
+            <!-- Spacer -->
+            <tr>
+               <td style="line-height: 0; font-size: 0; height: 30px; background: #fff;">&nbsp;</td>
+            </tr>
+            <!-- Spacer -->
+            <!-- Contact Sales : BEGIN -->
+            <tr>
+               <td bgcolor="#ffffff" align="center">
+                  <a href="#" target="_blank">
+                  <img src="http://via.placeholder.com/600x200" width="600" alt="alt text" border="0" align="center" style="width: 100%; max-width: 600px; height: auto; background: #dddddd; margin: auto;" class="g-img"></a>
+               </td>
+            </tr>
+            <!-- Contact Sales : END --> 
+            <!-- Logo Row : BEGIN -->
+            <tr>
+               <td valign="top" bgcolor="#fff" class="cols-2" style="background-color: #fff;">
+                  <!-- l-col -->
+                  <table class="l-col logo-row" width="295" align="left">
+                     <tr>
+                        <td valign="top" style="height: auto; margin: 0; padding: 0;">
+                           <a href="#" target="_blank"> <img alt="car seat" src="http://via.placeholder.com/99x65" width="99" height="66" border="0" style="width: 99px; border:none;"> </a> 
+                        </td>
+                        <td valign="top" style="height: auto; margin: 0; padding: 0;">
+                           <a href="#" target="_blank"> <img alt="wheeled mobility" src="http://via.placeholder.com/99x65" width="99" height="66" border="0" style="width: 99px; border:none;"> </a> 
+                        </td>
+                        <td valign="top" style="height: auto; margin: 0; padding: 0;">
+                           <a href="#" target="_blank"> <img alt="walking aid" src="http://via.placeholder.com/99x65" width="100" height="66" border="0" style="width: 100px; border:none;"> </a> 
+                        </td>
+                     </tr>
+                  </table>
+                  <!-- r-col -->
+                  <table class="r-col logo-row" width="296" align="left">
+                     <tr>
+                        <td valign="top" style="height: auto; margin: 0; padding: 0;">
+                           <a href="#" target="_blank"> <img alt="seating position" src="http://via.placeholder.com/99x65" width="99" height="66" border="0" style="width: 99px; border:none;"> </a> 
+                        </td>
+                        <td valign="top" style="height: auto; margin: 0; padding: 0;">
+                           <a href="#" target="_blank"> <img alt="bathing" src="http://via.placeholder.com/99x65" width="99" height="66" border="0" style="width: 99px; border:none;"> </a> 
+                        </td>
+                        <td valign="top" style="height: auto; margin: 0; padding: 0;">
+                           <a href="#" target="_blank"> <img alt="toileting" src="http://via.placeholder.com/99x65" width="100" height="66" border="0" style="width: 100px; border:none;"> </a> 
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- Logo Row : BEGIN -->
+            <!-- Footer Row : BEGIN -->
+            <tr>
+               <td valign="top" bgcolor="#fff" class="cols-2" style="background-color: #fff; font-family: Arial,sans-serif, 'Montserrat';">
+                  <!-- l-col -->
+                  <table class="l-col" width="270" align="left">
+                     <tr>
+                        <td class="center-on-narrow" valign="top" width="100%" style="font-size: 12px; color:#636363; padding: 10px 10px 10px 20px">
+                           <img src="http://via.placeholder.com/245x71" width="245" height="71" style="width: 245px;" alt="inspired by drive"> 
+                        </td>
+                     </tr>
+                     
+                  </table>
+                  <!-- r-col -->
+                  <table class="r-col" width="270" align="right">
+                     <tr>
+                        <td class="center-on-narrow" valign="top" align="right" width="100%" style="font-size: 16px; line-height: 18px; color:#1e335e; padding: 20px 20px 0 0;">
+                           Brooklyn stumptown helvetica drinking vinegar sartorial vexillologist. 
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="center-on-narrow" width="100%" align="right" valign="top" class="social-icons" style="text-align: right; padding: 0 20px 0 0;">
+                           <a href="#" target="_blank"><img src="http://via.placeholder.com/40x40" style="margin: 0 -8px 0 0; width: 40px;" border="0" width="40" height="40" alt=""></a>
+                           <a href="#" target="_blank"><img src="http://via.placeholder.com/40x40" style="margin: 0 -8px 0 0; width: 40px;" border="0" width="40" height="40" alt=""></a>
+                           <a href="#" target="_blank"><img src="http://via.placeholder.com/40x40" style="margin: 0 -8px 0 0; width: 40px;" border="0" width="40" height="40" alt=""></a>
+                           <a href="#" target="_blank"><img src="http://via.placeholder.com/40x40" style="margin: 0 -8px 0 0; width: 40px;" border="0" width="40" height="40" alt=""></a>
+                           <a href="#" target="_blank"><img src="http://via.placeholder.com/40x40" style="margin: 0 -8px 0 0; width: 40px;" border="0" width="40" height="40" alt=""></a>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <!-- Footer Row : BEGIN -->
+            <!-- Full Width Content Row : BEGIN -->
+            <tr>
+               <td valign="top" bgcolor="#ffffff" style="font-family: Arial,sans-serif, 'Montserrat'; font-size: 12px; line-height: 14px; color:#1e335e; padding: 20px 20px 0 20px">
+                  <span style="font-size: 70%; line-height: 0; vertical-align: 3px">&copy;</span>Brooklyn stumptown helvetica drinking vinegar sartorial vexillologist. <span style="font-size: 70%; line-height: 0; vertical-align: 3px">&reg;</span>,Cornhole echo park flexitarian ethical taiyaki. Franzen tacos cornhole cronut, artisan man braid 
+               </td>
+            </tr>
+            <!-- Spacer -->
+            <tr>
+               <td style="line-height: 0; font-size: 0; height: 40px; background: #fff;">&nbsp;</td>
+            </tr>
+            <!-- Spacer -->
+            <tr>
+               <td style="line-height: 0; font-size: 0; height: 40px;">&nbsp;</td>
+            </tr>
+            <!-- Full Width Content Row : END -->
+         </table>
+         
+         <!-- Email Body : END -->
+      </center>
+   </body>
+</html>
